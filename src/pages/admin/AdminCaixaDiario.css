@@ -1,0 +1,166 @@
+/* Card de Resumo Financeiro */
+.resumo-caixa-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f9fbf9 100%);
+  border-left: 5px solid #78b96a;
+}
+
+.resumo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.resumo-label {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.resumo-valor {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.text-green {
+  color: #78b96a;
+}
+
+.resumo-icon {
+  font-size: 40px;
+  background-color: #eaf5e7;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Badges para Forma de Pagamento */
+.badge-pagamento {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+.badge-pagamento.pix {
+  background-color: #e0f2fe; /* Azul claro */
+  color: #0284c7;
+}
+
+.badge-pagamento.dinheiro {
+  background-color: #dcfce7; /* Verde claro */
+  color: #166534;
+}
+
+.badge-pagamento.cartão,
+.badge-pagamento.cartao {
+  background-color: #fef08a; /* Amarelo claro */
+  color: #854d0e;
+}
+
+/* Espaçamentos */
+.mb-20 { margin-bottom: 20px; }
+.mt-20 { margin-top: 20px; }
+.mt-10 { margin-top: 10px; }
+.text-center { text-align: center; }
+.text-green { color: #00a650 !important; }
+
+/* ==================
+   CARDS DE RESUMO (TOPO)
+   ================== */
+.caixa-resumo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa-cards-row {
+  display: flex;
+  gap: 20px;
+}
+
+.caixa-card {
+  flex: 1;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid transparent;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.caixa-card span {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.caixa-card h4, .caixa-card h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* Cores específicas dos Cards */
+.dark-green {
+  background-color: #234c38;
+  color: white;
+}
+
+.white-card {
+  background-color: white;
+  color: #555;
+  border: 1px solid #eaeaea;
+}
+
+.white-card h2 {
+  font-size: 32px;
+}
+
+/* Bordas coloridas inferiores idênticas ao design original */
+.border-blue { border-bottom-color: #3498db; }
+.border-orange { border-bottom-color: #e67e22; }
+.border-green { border-bottom-color: #2ecc71; }
+
+/* ==================
+   BADGES FORMAS DE PAGAMENTO
+   ================== */
+.badge-pagamento {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+.badge-pagamento.pix {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.badge-pagamento.dinheiro {
+  background-color: #dcfce7;
+  color: #2ecc71;
+}
+
+.badge-pagamento.cartao,
+.badge-pagamento.cartão {
+  background-color: #fef08a;
+  color: #854d0e;
+}

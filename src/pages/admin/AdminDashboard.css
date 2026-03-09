@@ -1,0 +1,188 @@
+/* Container Principal */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f9fa; /* Fundo cinza bem claro para destacar os cards */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==================
+   BARRA SUPERIOR 
+   ================== */
+.admin-topbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.admin-logo-area {
+  width: 240px; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-text small {
+  font-size: 9px;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.logo-text strong {
+  font-size: 16px;
+  color: #2e654e;
+}
+
+.admin-header-title {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.admin-header-title h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #111;
+  font-weight: 700;
+}
+
+.admin-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 30px;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+}
+
+/* ==================
+   CORPO (Sidebar + Main) 
+   ================== */
+.admin-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Barra Lateral */
+.admin-sidebar {
+  width: 240px;
+  background-color: #2b5d46; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 25px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: #234c38;
+  color: #fff;
+}
+
+.nav-item.active {
+  background-color: #1e4532; 
+  color: #ffffff;
+  border-left: 4px solid #78b96a;
+  padding-left: 21px; 
+}
+
+/* ==================
+   CONTEÚDO PRINCIPAL E CARDS 
+   ================== */
+.admin-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.dashboard-cards-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dash-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 25px 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid transparent; 
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.card-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+}
+
+.text-green {
+  color: #00a650; 
+}
+
+
+.border-teal {
+  border-left-color: #1abc9c;
+}
+
+.border-dark {
+  border-left-color: #1e293b;
+}
+
+.border-orange {
+  border-left-color: #f39c12;
+}

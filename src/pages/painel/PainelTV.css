@@ -1,0 +1,64 @@
+.tv-iniciar-container {
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh; background-color: #2c3e50;
+}
+.btn-iniciar-tv {
+  padding: 20px 40px; font-size: 24px; font-weight: bold;
+  background-color: #27ae60; color: white; border: none; border-radius: 10px; cursor: pointer;
+}
+
+/* Painel TV */
+.tv-container {
+  background-color: #f0f4f8; height: 100vh;
+  display: flex; flex-direction: column; font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.tv-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 40px; background-color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+/* Logo */
+.tv-logo { 
+  display: flex;
+  align-items: center;
+}
+
+.tv-logo img {
+  height: 80px;
+  width: auto;
+}
+
+.tv-relogio { font-size: 48px; font-weight: 800; color: #00234b; }
+
+.tv-body {
+  display: flex; flex: 1; padding: 20px; gap: 20px;
+}
+
+.tv-card-principal {
+  flex: 3; background: #fff; border-radius: 8px; border: 2px solid #ddd;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.tv-label { font-size: 32px; color: #7f8c8d; font-weight: 600; letter-spacing: 2px; }
+.tv-nome-destaque { font-size: 6vw; font-weight: 800; color: #00234b; margin-top: 10px; }
+.tv-local-destaque { font-size: 5vw; font-weight: 800; color: #00234b; margin-top: 10px; }
+
+.tv-sidebar {
+  flex: 1; background: #e3ebf3; border-radius: 8px; border: 2px solid #ccd6e0;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+
+.tv-sidebar-header {
+  background: #d0dbe6; color: #446585; font-weight: 800;
+  padding: 20px; text-align: center; font-size: 18px; letter-spacing: 1px;
+}
+
+.tv-sidebar-list { padding: 10px; display: flex; flex-direction: column; gap: 10px; }
+.tv-hist-item {
+  background: #fff; padding: 25px 20px; border-radius: 6px;
+  font-size: 24px; font-weight: bold; color: #00234b;
+  text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,115 @@
+.fila-container {
+  background-color: #f5f6f8;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fila-content { 
+  padding: 40px; 
+}
+
+.fila-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.fila-title { 
+  margin: 0; 
+  padding: 20px; 
+  font-size: 14px; 
+  color: #333; 
+  border-bottom: 1px solid #eee; 
+}
+
+.fila-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.fila-table th {
+  background-color: #e4e4e4;
+  color: #333;
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.fila-table td { 
+  padding: 15px 20px; 
+  border-bottom: 1px solid #eee; 
+  font-size: 12px; 
+  color: #555; 
+}
+
+.prioridade-dot { 
+  width: 18px; 
+  height: 18px; 
+  border-radius: 50%; 
+  margin: 0 auto; 
+}
+
+.prioridade-dot.normal { background-color: #00e676; }
+.prioridade-dot.preferencial { background-color: #ffb74d; }
+.prioridade-dot.urgente { background-color: #e57373; }
+
+
+.linha-chamada td { 
+  background-color: #fbfbfb; 
+}
+
+/* ── ESTILOS DA ETIQUETA DE STATUS ── */
+.badge-status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.status-aguardando {
+  background-color: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ffe0b2;
+}
+
+.status-chamado {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+/* ── BOTÕES DE AÇÕES ── */
+.fila-actions { 
+  display: flex; 
+  justify-content: flex-end; 
+  gap: 8px; 
+}
+
+.btn-fila {
+  border: none; 
+  width: 32px; 
+  height: 28px; 
+  border-radius: 4px;
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: white; 
+  font-size: 14px;
+  transition: transform 0.1s, filter 0.2s;
+}
+
+.btn-fila:hover {
+  filter: brightness(0.9);
+}
+
+.btn-fila:active {
+  transform: scale(0.95);
+}
+
+.btn-chamar { background-color: #81c784; }
+.btn-prontuario { background-color: #66bb6a; }

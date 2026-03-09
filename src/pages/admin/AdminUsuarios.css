@@ -1,0 +1,236 @@
+
+/* Painéis (Cartões brancos) */
+.admin-panel-card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 20px;
+}
+
+
+
+.panel-title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+/* ==================
+   FORMULÁRIOS
+   ================== */
+.admin-form .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.admin-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-form select {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.admin-form select option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Flexbox  para largura das colunas */
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+
+.admin-form label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.admin-form input, 
+.admin-form select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.admin-form input:focus, 
+.admin-form select:focus {
+  border-color: #78b96a;
+}
+
+/* Botões do Formulário */
+.btn-save-green {
+  background-color: #78b96a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-save-green:hover {
+  background-color: #66a159;
+}
+
+.btn-cancel-form {
+  background-color: #f1f1f1;
+  color: #555;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-cancel-form:hover {
+  background-color: #e4e4e4;
+}
+
+/* ==================
+   TABELAS E AÇÕES
+   ================== */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background-color: #f9f9f9;
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+  color: #555;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+  color: #333;
+  vertical-align: middle;
+}
+
+/* Botões de Ação na Tabela */
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 4px;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.btn-icon:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+}
+
+/* ==================
+   MODAL DE EXCLUSÃO
+   ================== */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-modal {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirm-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-cancel-modal {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  color: #555;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex: 1;
+}
+
+.btn-cancel-modal:hover { background-color: #e4e4e4; }
+
+.btn-confirm-del {
+  padding: 10px 20px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex: 1;
+}
+
+.btn-confirm-del:hover { background-color: #c62828; }
+
+/* ==================
+   TOAST NOTIFICATION
+   ================== */
+.toast-msg {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 99999; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.4s ease-out;
+}
+
+.toast-msg.sucesso { background-color: #78b96a; }
+.toast-msg.erro { background-color: #e53935; }
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* ==================
+   UTILITÁRIOS
+   ================== */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.text-right { text-align: right; }
+.text-green { color: #00a650 !important; }
+.text-red { color: #e53935 !important; }
