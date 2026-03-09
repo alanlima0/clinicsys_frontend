@@ -245,7 +245,7 @@ const ProntuarioPaciente = () => {
               </div>
 
               <div className="prontuario-card">
-                <h4 className="card-title">2. Anamnese e Exame Físico</h4>
+                <h4 className="card-title">2. Anamnese e Exames</h4>
                 <textarea 
                   className="prontuario-textarea"
                   placeholder="Descreva a história clínica, exame físico detalhado..."
