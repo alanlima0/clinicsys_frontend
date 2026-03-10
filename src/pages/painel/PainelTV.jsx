@@ -23,16 +23,30 @@ const PainelTV = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Chama a voz
+
+ // Chama a voz com toque musical antes
   const anunciarNoPainel = (nome, consultorio) => {
     if (!audioAtivo) return;
     
-    const texto = `Paciente ${nome}, dirija-se ao ${consultorio}`;
-    const fala = new SpeechSynthesisUtterance(texto);
-    fala.lang = "pt-BR";
-    fala.rate = 0.8;
-    fala.pitch = 1;
-    speechSynthesis.speak(fala);
+    // 1. Cria e toca o som da campainha para acordar a TV
+    const toque = new Audio('/toque.mp3');
+    
+    // O catch evita que a tela quebre caso o navegador bloqueie o áudio por algum motivo
+    toque.play().catch(erro => console.error("Erro ao tocar campainha:", erro));
+
+    // 2. Espera 2 segundos (2000 ms) e depois chama a voz
+    // Ajuste esse tempo dependendo de quantos segundos dura o seu toque.mp3
+    setTimeout(() => {
+      // Se quiser, pode tirar a palavra "Paciente" agora que o toque já acorda a TV
+      const texto = `Paciente ${nome}, dirija-se ao ${consultorio}`;
+      const fala = new SpeechSynthesisUtterance(texto);
+      
+      fala.lang = "pt-BR";
+      fala.rate = 0.8;
+      fala.pitch = 1;
+      
+      speechSynthesis.speak(fala);
+    }, 2000); 
   };
 
   // Busca na API a cada 3 segundos
