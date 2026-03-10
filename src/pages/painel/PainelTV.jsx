@@ -27,10 +27,10 @@ const PainelTV = () => {
   const anunciarNoPainel = (nome, consultorio) => {
     if (!audioAtivo) return;
     
-    const texto = `${nome}, dirija-se ao ${consultorio}`;
+    const texto = `..... ${nome}, dirija-se ao ${consultorio}`;
     const fala = new SpeechSynthesisUtterance(texto);
     fala.lang = "pt-BR";
-    fala.rate = 0.65;
+    fala.rate = 0.8;
     fala.pitch = 1;
     speechSynthesis.speak(fala);
   };
