@@ -6,7 +6,7 @@ import API_BASE_URL from './api';
 class FilaRecepcaoService {
   async listarFilaAtendimento() {
     const token = authService.getAccessToken();
-    const url = `${API_BASE_URL}/atendimentos/`;
+    const url = `${API_BASE_URL}/atendimentos/fila/`;
 
     const response = await fetch(url, {
       headers: {
